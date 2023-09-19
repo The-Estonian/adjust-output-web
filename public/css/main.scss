@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  &_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.5rem;
+    &_label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem;
+    }
+    input[type='submit'] {
+      padding: 1rem;
+      width: 50%;
+      margin: 1rem auto;
+      border-radius: 0.5rem;
+      border: none;
+      transition: 1s;
+      border: 2px solid transparent;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid red;
+      }
+    }
+    input[type='text'] {
+      padding: 1rem;
+      margin: 1rem auto;
+      border-radius: 0.5rem;
+      border: none;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      outline: none;
+      font-size: medium;
+      width: 90%;
+    }
+  }
+  &_output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}

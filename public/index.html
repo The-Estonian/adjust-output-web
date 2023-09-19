@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="container_form" method="POST">
+        <label for="userInput" id="userInput" class="container_form_label">
+          <span class="container_form_label_span">Text to encode!</span>
+          <input type="text" name="userInput" />
+        </label>
+        <div class="container_form_label_container">
+          <label for="standard">
+            <span>Standard</span>
+            <input
+              type="radio"
+              id="standard"
+              name="banner"
+              value="standard"
+              checked="checked"
+            />
+          </label>
+          <label for="shadow">
+            <span>Shadow</span>
+            <input type="radio" id="shadow" name="banner" value="shadow" />
+          </label>
+          <label for="thinkertoy">
+            <span>Thinkertoy</span>
+            <input
+              type="radio"
+              id="thinkertoy"
+              name="banner"
+              value="thinkertoy"
+            />
+          </label>
+        </div>
+        <input type="submit" value="Send" />
+      </form>
+      {{if .DataRow}}
+      <div class="container_output"><pre>{{.DataRow}}</pre></div>
+      {{end}}
+    </div>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
