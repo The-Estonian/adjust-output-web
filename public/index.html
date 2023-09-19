@@ -41,7 +41,10 @@
         <input type="submit" value="Send" />
       </form>
       {{if .DataRow}}
-      <div class="container_output"><pre>{{.DataRow}}{{.DataRow2}}</pre></div>
+      <div class="container_output">
+        <pre>{{.DataRow}}</pre>
+        <pre>{{.DataRow2}}</pre>
+      </div>
       {{end}}
     </div>
     <!-- <script src="main.js"></script> -->

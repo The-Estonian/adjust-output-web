@@ -90,7 +90,7 @@ func createAsciiString(text, banner string) string {
 	asciiString := ""
 	for index, item := range encodedTextArray {
 		asciiString += item
-		if index < len(encodedTextArray) {
+		if index < len(encodedTextArray)-3 {
 			asciiString += "\n"
 		}
 	}
