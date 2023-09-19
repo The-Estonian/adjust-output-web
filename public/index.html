@@ -11,7 +11,7 @@
       <form action="" class="container_form" method="POST">
         <label for="userInput" id="userInput" class="container_form_label">
           <span class="container_form_label_span">Text to encode!</span>
-          <input type="text" name="userInput" />
+          <textarea name="userInput" rows="2" cols="30"></textarea>
         </label>
         <div class="container_form_label_container">
           <label for="standard">
@@ -41,7 +41,7 @@
         <input type="submit" value="Send" />
       </form>
       {{if .DataRow}}
-      <div class="container_output"><pre>{{.DataRow}}</pre></div>
+      <div class="container_output"><pre>{{.DataRow}}{{.DataRow2}}</pre></div>
       {{end}}
     </div>
     <!-- <script src="main.js"></script> -->
