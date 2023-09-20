@@ -16,6 +16,6 @@ go build
 go run . 
 
 ```
-Click [here](http://localhost:8080)to view the webpage
+Click [here](http://localhost:8080) to view the webpage
 
 _<sup>Authors: [Jaanus Saar](https://01.kood.tech/git/jsaar), [Chris Laks](https://01.kood.tech/git/claks), [Usman Wani](https://01.kood.tech/git/uwani)_</sup>
