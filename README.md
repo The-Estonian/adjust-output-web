@@ -1,4 +1,4 @@
-To audit the program, find the steps [here](https://github.com/01-edu/public/tree/master/subjects/ascii-art/web/audit)
+To audit the program, find the steps [here](https://github.com/01-edu/public/tree/master/subjects/ascii-art-web/audit)
 
 # Text to ASCII Art Converter Web
 
