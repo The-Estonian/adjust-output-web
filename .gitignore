@@ -3,7 +3,7 @@
 # $ git config --global mergetool.keepBackup false
 *.orig
 *.scss
-*.css.map
+*.map
 
 # Created by git when using merge tools for conflicts
 *.BACKUP.*

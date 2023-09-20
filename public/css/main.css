@@ -3,31 +3,47 @@
   font-size: 1.15rem;
 }
 
+body {
+  background: linear-gradient(45deg, rgba(73, 5, 5, 0.8), rgb(63, 15, 15), rgba(73, 5, 5, 0.8));
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95vh;
-  font-family: "Anton", sans-serif;
   font-family: "Roboto", sans-serif;
+  height: 98vh;
+  width: 98%;
+  margin: auto;
 }
 .container_form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 3rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  box-shadow: rgba(79, 79, 202, 0.8) 0px 7px 29px 0px;
   border-radius: 0.5rem;
+  height: 35%;
+  width: 30%;
 }
 .container_form_label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
+  margin: 0 1rem;
+  width: 100%;
+  height: 100%;
+}
+.container_form_label_span {
+  color: white;
+  margin-top: 0.2rem;
+  font-size: 1.5rem;
 }
 .container_form input[type=submit] {
+  background: linear-gradient(50deg, white, rgba(146, 0, 0, 0.582), white);
+  color: white;
   padding: 1rem;
   width: 50%;
   margin: 1rem auto;
@@ -36,30 +52,55 @@
   transition: 1s;
   border: 2px solid transparent;
   cursor: pointer;
+  box-shadow: rgba(79, 79, 202, 0.2) 0px 7px 29px 0px;
 }
 .container_form input[type=submit]:hover {
-  border: 2px solid red;
+  border: 2px solid rgb(255, 255, 255);
 }
-.container_form input[type=text] {
-  padding: 1rem;
+.container_form_textbox {
   margin: 1rem auto;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  outline: none;
-  font-size: medium;
-  width: 95%;
+  box-shadow: rgba(79, 79, 202, 0.2) 0px 7px 29px 0px;
+  font-size: 1.2rem;
+  width: 90%;
+  height: 90%;
+}
+.container_form_container label input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.container_form_container label input[type=radio]:checked + img {
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: rgba(255, 255, 255, 0.6) 0px 5px 15px;
+}
+.container_form_container label img {
+  height: 2rem;
+  width: 6rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  margin: 0.2rem;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 15px;
+  transition: 1s;
+  border: 3px solid transparent;
+}
+.container_form_container label img:hover {
+  border: 3px solid black;
 }
 .container_output {
+  color: white;
   margin-top: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 0.1rem 1rem;
   border-radius: 0.5rem;
-  width: 95%;
-  overflow: scroll;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 .container_output pre {
-  font-size: 1rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=main.css.map */

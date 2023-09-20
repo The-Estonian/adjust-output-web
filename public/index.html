@@ -10,10 +10,12 @@
     <div class="container">
       <form action="" class="container_form" method="POST">
         <label for="userInput" id="userInput" class="container_form_label">
-          <span class="container_form_label_span">Text to encode!</span>
-          <textarea name="userInput" rows="2" cols="30"></textarea>
+          <span class="container_form_label_span"
+            >Enter text to convert into ASCII</span
+          >
+          <textarea class="container_form_textbox" name="userInput"></textarea>
         </label>
-        <div class="container_form_label_container">
+        <div class="container_form_container">
           <label for="standard">
             <input
               type="radio"
@@ -22,11 +24,14 @@
               value="standard"
               checked="checked"
             />
-            <span>Standard</span>
+            <img
+              class="container_form_container_image"
+              src="public/media/standard.png"
+            />
           </label>
           <label for="shadow">
             <input type="radio" id="shadow" name="banner" value="shadow" />
-            <span>Shadow</span>
+            <img src="public/media/Shadow.png" />
           </label>
           <label for="thinkertoy">
             <input
@@ -35,12 +40,12 @@
               name="banner"
               value="thinkertoy"
             />
-            <span>Thinkertoy</span>
+            <img src="public/media/Thinkertoy.png" />
           </label>
         </div>
         <input type="submit" value="Send" />
       </form>
-      {{if .DataRow}}
+      {{if or .DataRow .DataRow2}}
       <div class="container_output">
         <pre>{{.DataRow}}</pre>
         <pre>{{.DataRow2}}</pre>
